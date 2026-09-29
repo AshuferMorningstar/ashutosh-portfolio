@@ -124,13 +124,14 @@ export default function Page() {
           </div>
         </nav>
 
-        <section className="relative overflow-visible pb-20">
-          <div className="grid items-center gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
-            <button type="button" aria-label="View larger profile photo" onClick={() => setPhotoOpen(true)} className="group relative mx-auto block w-full max-w-[520px] cursor-zoom-in text-left lg:mx-0">
-              <div className="absolute inset-8 rounded-full bg-cyan-300/10 blur-3xl transition-opacity group-hover:opacity-80" />
-              <img src="/profile-photo.jpeg" alt="Ashutosh Kumar" width="1182" height="665" className="relative w-full object-contain object-center grayscale-[0.08] drop-shadow-[0_24px_45px_rgba(0,0,0,0.35)] transition-transform duration-500 group-hover:scale-[1.02]" />
-            </button>
-            <div className="relative z-10 lg:pt-2">
+        <section className="relative min-h-[590px] overflow-visible pb-20">
+          <button type="button" aria-label="View larger profile photo" onClick={() => setPhotoOpen(true)} className="group absolute right-[-2rem] top-[-2.5rem] z-0 block h-[620px] w-[58%] cursor-zoom-in text-left sm:right-[-1rem] lg:right-[-3rem] lg:h-[680px]">
+            <div className="absolute inset-10 rounded-full bg-cyan-300/10 blur-3xl transition-opacity group-hover:opacity-80" />
+            <img src="/profile-photo.jpeg" alt="Ashutosh Kumar" width="1182" height="665" className="relative h-full w-full object-contain object-center opacity-80 drop-shadow-[0_24px_45px_rgba(0,0,0,0.35)] transition-transform duration-500 group-hover:scale-[1.02]" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-[#07111f] via-[#07111f]/75 to-transparent" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-[#07111f] to-transparent" />
+          </button>
+          <div className="relative z-10 max-w-2xl pt-16 lg:pt-20">
               <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-cyan-300/25 bg-cyan-300/10 px-3 py-1.5 text-xs font-medium tracking-[0.16em] text-cyan-200">
                 <span className="size-1.5 rounded-full bg-cyan-300 shadow-[0_0_12px_#67e8f9]" /> AVAILABLE FOR OPPORTUNITIES
               </div>
@@ -150,7 +151,6 @@ export default function Page() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         <section className="-mt-10 grid gap-6 border-y border-white/10 py-10 sm:grid-cols-3">
