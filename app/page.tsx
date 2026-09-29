@@ -58,6 +58,24 @@ const projects = [
     summary: 'Orchestrated resume extraction, real-time speech loops, and automated evaluation feedback for practice interviews.',
     tags: ['Express.js', 'Gemini', 'ElevenLabs', 'Web Speech API'],
   },
+  {
+    number: '07',
+    title: 'Calorie Wise',
+    summary: 'Built an installable nutrition and fitness PWA for meal logging, Indian-food search, recipes, workouts, goals, and AI-assisted nutrition lookup.',
+    tags: ['React', 'Vite', 'Firebase', 'OpenRouter', 'PWA'],
+  },
+  {
+    number: '08',
+    title: 'Mafia Real-Time Game',
+    summary: 'Created a multiplayer Werewolf-style game with live rooms, secret roles, phase orchestration, team chat, voting, and SQLite chat history.',
+    tags: ['FastAPI', 'Socket.IO', 'React', 'SQLite'],
+  },
+  {
+    number: '09',
+    title: 'Pop Balloons Game',
+    summary: 'Developed a PyQt6 arcade game with score-based difficulty, bomb balloons, pause and mute controls, sound effects, and looping music.',
+    tags: ['Python', 'PyQt6', 'QPainter', 'Audio'],
+  },
 ]
 
 const skillGroups = [
@@ -121,7 +139,7 @@ export default function Page() {
         </section>
 
         <section className="grid gap-6 border-y border-white/10 py-10 sm:grid-cols-3">
-          <div><p className="text-4xl font-semibold text-cyan-300">06</p><p className="mt-2 text-xs uppercase tracking-[0.18em] text-slate-500">Featured builds</p></div>
+          <div><p className="text-4xl font-semibold text-cyan-300">09</p><p className="mt-2 text-xs uppercase tracking-[0.18em] text-slate-500">Featured builds</p></div>
           <div><p className="text-4xl font-semibold text-cyan-300">10K+</p><p className="mt-2 text-xs uppercase tracking-[0.18em] text-slate-500">Job records analyzed</p></div>
           <div><p className="text-4xl font-semibold text-cyan-300">2026</p><p className="mt-2 text-xs uppercase tracking-[0.18em] text-slate-500">B.Tech graduation</p></div>
         </section>
