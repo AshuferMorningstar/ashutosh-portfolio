@@ -39,6 +39,7 @@ const projects = [
     title: 'Sentiment Metrics Dashboard',
     summary: 'Combined API ingestion, Gemini sentiment scoring, and interactive KPI views into one modular analytics workflow.',
     tags: ['Python', 'Gemini API', 'Analytics'],
+    liveUrl: 'https://sentiment-metrics-quarterly-dashboard1.streamlit.app/#sentiment-distribution',
   },
   {
     number: '04',
@@ -63,12 +64,14 @@ const projects = [
     title: 'Calorie Wise',
     summary: 'Built an installable nutrition and fitness PWA for meal logging, Indian-food search, recipes, workouts, goals, and AI-assisted nutrition lookup.',
     tags: ['React', 'Vite', 'Firebase', 'OpenRouter', 'PWA'],
+    liveUrl: 'https://calorie-wise-vert.vercel.app',
   },
   {
     number: '08',
     title: 'Mafia Real-Time Game',
     summary: 'Created a multiplayer Werewolf-style game with live rooms, secret roles, phase orchestration, team chat, voting, and SQLite chat history.',
     tags: ['FastAPI', 'Socket.IO', 'React', 'SQLite'],
+    liveUrl: 'https://mafia-git-main-ashufer-morningstars-projects.vercel.app',
   },
   {
     number: '09',
@@ -148,7 +151,7 @@ export default function Page() {
         <section id="work" className="py-20">
           <div className="mb-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-end"><div><p className="mb-3 font-mono text-sm text-cyan-300">/ SELECTED WORK</p><h2 className="text-4xl font-semibold tracking-[-0.05em] sm:text-5xl">Built with intent.</h2></div><a href={githubRepos} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-cyan-200">Browse GitHub repositories <ExternalLink /></a></div>
           <div className="grid gap-4 md:grid-cols-2">
-            {projects.map((project) => <article key={project.number} className="group flex min-h-[260px] flex-col justify-between rounded-3xl border border-white/10 bg-white/[0.045] p-6 transition-all hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-cyan-300/[0.07] sm:p-7"><div><div className="mb-8 flex items-center justify-between"><span className="font-mono text-sm text-cyan-300">{project.number}</span><a aria-label={`View ${project.title} on GitHub`} href={githubRepos} target="_blank" rel="noreferrer" className="text-slate-500 transition-colors hover:text-cyan-300"><GitBranch /></a></div><h3 className="text-2xl font-semibold tracking-[-0.03em] text-white">{project.title}</h3><p className="mt-3 max-w-lg text-sm leading-6 text-slate-400">{project.summary}</p></div><div className="mt-8 flex flex-wrap gap-2">{project.tags.map(tag => <span key={tag} className="rounded-full border border-white/10 px-2.5 py-1 text-[11px] text-slate-400">{tag}</span>)}</div></article>)}
+            {projects.map((project) => <article key={project.number} className="group flex min-h-[260px] flex-col justify-between rounded-3xl border border-white/10 bg-white/[0.045] p-6 transition-all hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-cyan-300/[0.07] sm:p-7"><div><div className="mb-8 flex items-center justify-between"><span className="font-mono text-sm text-cyan-300">{project.number}</span><div className="flex items-center gap-3"><a aria-label={`View ${project.title} live`} href={project.liveUrl} target="_blank" rel="noreferrer" className="text-slate-500 transition-colors hover:text-cyan-300"><ExternalLink /></a><a aria-label={`View ${project.title} on GitHub`} href={githubRepos} target="_blank" rel="noreferrer" className="text-slate-500 transition-colors hover:text-cyan-300"><GitBranch /></a></div></div><h3 className="text-2xl font-semibold tracking-[-0.03em] text-white">{project.title}</h3><p className="mt-3 max-w-lg text-sm leading-6 text-slate-400">{project.summary}</p></div><div className="mt-8 flex flex-wrap gap-2">{project.tags.map(tag => <span key={tag} className="rounded-full border border-white/10 px-2.5 py-1 text-[11px] text-slate-400">{tag}</span>)}</div></article>)}
           </div>
         </section>
 
