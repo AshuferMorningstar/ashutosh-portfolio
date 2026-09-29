@@ -42,6 +42,7 @@ const projects = [
     summary: 'Combined API ingestion, Gemini sentiment scoring, and interactive KPI views into one modular analytics workflow.',
     tags: ['Python', 'Gemini API', 'Analytics'],
     liveUrl: 'https://sentiment-metrics-quarterly-dashboard1.streamlit.app/#sentiment-distribution',
+    githubUrl: 'https://github.com/AshuferMorningstar/Sentiment-Metrics-Quarterly-Dashboard',
   },
   {
     number: '04',
@@ -62,6 +63,7 @@ const projects = [
     title: 'AI Mock Interview Platform',
     summary: 'Orchestrated resume extraction, real-time speech loops, and automated evaluation feedback for practice interviews.',
     tags: ['Express.js', 'Gemini', 'ElevenLabs', 'Web Speech API'],
+    githubUrl: 'https://github.com/AshuferMorningstar/-code.arr',
   },
   {
     number: '07',
@@ -69,6 +71,7 @@ const projects = [
     summary: 'Built an installable nutrition and fitness PWA for meal logging, Indian-food search, recipes, workouts, goals, and AI-assisted nutrition lookup.',
     tags: ['React', 'Vite', 'Firebase', 'OpenRouter', 'PWA'],
     liveUrl: 'https://calorie-wise-vert.vercel.app',
+    githubUrl: 'https://github.com/AshuferMorningstar/Calorie-Tracker',
   },
   {
     number: '08',
@@ -76,6 +79,7 @@ const projects = [
     summary: 'Created a multiplayer Werewolf-style game with live rooms, secret roles, phase orchestration, team chat, voting, and SQLite chat history.',
     tags: ['FastAPI', 'Socket.IO', 'React', 'SQLite'],
     liveUrl: 'https://mafia-git-main-ashufer-morningstars-projects.vercel.app',
+    githubUrl: 'https://github.com/AshuferMorningstar/Mafia',
   },
   {
     number: '09',
