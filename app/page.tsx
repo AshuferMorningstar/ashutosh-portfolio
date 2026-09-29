@@ -91,7 +91,7 @@ const projects = [
 ]
 
 const skillGroups = [
-  { icon: Terminal, label: 'Core', items: ['Python', 'SQL', 'PostgreSQL', 'CSS'] },
+  { icon: Terminal, label: 'Core', items: ['Python', 'SQL', 'PostgreSQL', 'HTML5', 'CSS'] },
   { icon: BrainCircuit, label: 'AI & APIs', items: ['ChatGPT', 'Gemini API', 'OpenAI API', 'ElevenLabs'] },
   { icon: Database, label: 'Tools', items: ['Git', 'GitHub', 'GitHub Copilot', 'Google Sheets'] },
   { icon: GitBranch, label: 'DevOps', items: ['CI/CD', 'Docker', 'GitHub Actions', 'Deployment workflows'] },
