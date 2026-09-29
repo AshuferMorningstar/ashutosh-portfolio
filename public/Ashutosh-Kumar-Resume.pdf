@@ -1,0 +1,65 @@
+
+
+ASHUTOSH KUMAR
+AI Trainer | AI Engineer | Fresher Technical Professional (Python | SQL | AI-Augmented Development)
+Kolkata, West Bengal, India | +91 8936840174 | ashufer1211@gmail.com
+github.com/AshuferMorningstar | linkedin.com/in/ashutosh-kumar-139b6a258
+SUMMARY
+Resourceful, self-driven B.Tech graduate (Computer Science and Business Systems, 2026) with hands-on experience building 
+multiple independent projects spanning AI-integrated tools, automation, and data analytics using Python, SQL, PostgreSQL, and 
+modern AI/LLM APIs. Used AI tools (ChatGPT, Gemini API, GitHub Copilot, OpenAI API) as active development partners — 
+designing prompts and interaction flows, debugging pipeline logic, and prototyping intelligent features — while personally 
+validating and refining every AI output before use. Comfortable across the full AI-development lifecycle: prompt design, model/API 
+integration, evaluation, and automation. Seeking an entry-level AI Trainer or AI Engineer role.
+PROJECTS
+SQL Data Job Market Analysis  |  Python, SQL, PostgreSQL, GitHub Copilot
+●Query Architecture: Wrote multi-table SQL queries using CTEs, joins, and window functions to analyze over 10,000 global data analyst job 
+postings.
+●AI-Augmented Development: Used GitHub Copilot to accelerate drafting of complex query structures, then manually reviewed and corrected 
+every query for logical accuracy before running it against the dataset.
+●Insight Generation: Analyzed salary and regional data to identify high-paying remote roles and cross-referenced market demand against 
+baseline salaries to define optimal skill-learning pathways.
+Revenue Leakage Automation & Reporting Pipeline  |  Python, ChatGPT
+●End-to-End Automation: Engineered a Python pipeline to process corporate transaction logs, automatically validating data fields to discover 
+data quality gaps.
+●AI-Assisted Debugging: Used ChatGPT as a thinking partner to troubleshoot edge cases in threshold logic and speed up iteration on the 
+variance-detection code, hand-testing each fix against sample transaction data before finalizing it.
+●Automated Reporting: Implemented threshold triggers to flag transactional mismatches exceeding a 1% variance ceiling and programmed 
+dynamic handlers to export monthly variance summaries.
+Sentiment Metrics Dashboard & Processing Pipeline  |  Python, Gemini API
+●Pipeline Design: Built a modular ingestion routine to pull text datasets via API stream, extracting core samples to eliminate storage overhead.
+●AI-Powered Sentiment Analysis: Integrated the Gemini API to generate sentiment scores on cleaned text data, manually spot-checking outputs 
+against sample records to validate accuracy before including them in the dashboard.
+●Interactive Visualization: Configured a live analytics layout to track product KPI distributions and sentiment trends.
+AI AutoReply Bot  |  Python, OpenAI API, PyAutoGUI, Pyperclip
+●Automated Response System: Built a WhatsApp Web auto-reply bot that monitors incoming conversations in real time and uses OpenAI's 
+GPT-3.5-turbo to generate contextual, persona-based replies.
+●Screen & Chat Automation: Used PyAutoGUI and Pyperclip to detect new messages, extract chat history, and automate the copy-generate-
+paste-send workflow without manual intervention.
+●Context-Aware Prompting: Engineered chat-history analysis logic to feed relevant conversational context into the GPT prompt, producing 
+coherent, in-character responses.
+Jarvis Voice Assistant  |  Python, gTTS, pyttsx3, NewsAPI, OpenAI API
+●Voice Command Pipeline: Built a wake-word-triggered voice assistant that recognizes spoken commands via microphone and executes web 
+search, YouTube/Google queries, and local music playback.
+●Multi-Source Response Handling: Integrated NewsAPI for topic-based news headlines and the OpenAI API for general-query fallback 
+responses, with automatic fallback to Google/YouTube search for unrecognized commands.
+●Speech I/O: Implemented text-to-speech output using gTTS and pyttsx3, including a voice-triggered interrupt handler to stop news playback 
+mid-read.
+AI-Assisted Mock Interview Platform  |  Express.js, Gemini API, ElevenLabs, Web Speech API, Mammoth.js, PDF-Parse
+●Document Data Extraction: Built text-extraction pipelines using Mammoth.js and PDF-Parse to clean and ingest candidate resume files for 
+automated language processing.
+●AI Orchestration & Evaluation: Integrated Gemini, ElevenLabs, and Web Speech APIs to execute real-time speech-to-text/text-to-speech 
+interaction loops and dynamically compile automated evaluation feedback.
+TECHNICAL SKILLS
+●Core Languages & DBs: Python, SQL, PostgreSQL
+●Data & Platforms: Google Sheets
+●AI & Dev Tools: Git, GitHub, ChatGPT, Gemini API, GitHub Copilot, OpenAI API, ElevenLabs, Web Speech API
+●AI-Augmented Workflows: AI-assisted code drafting & debugging, rapid prototyping with generative AI, manually validating and hand-
+correcting every AI output before use
+EDUCATION
+Bachelor of Technology (B.Tech.) in Computer Science and Business Systems
+Techno India University | Graduation: 2026 | Marks: 66.6%
+LANGUAGES & INTERESTS
+●Languages: English (Professional), Hindi (Native)
+●Soft Skills: Data-Driven Problem Solving, Visual Storytelling, Technical-to-Business Translation, Cross-functional Communication
+●Interests: Coding & Open-Source Exploration, Digital Art & Sketching, Content Creation, Video Editing

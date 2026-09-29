@@ -110,9 +110,12 @@ export default function Page() {
   }
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#07111f] text-[#eef5fb] selection:bg-cyan-300 selection:text-[#07111f]">
+    <main className="relative min-h-screen overflow-hidden bg-[#07111f] text-[#eef5fb] selection:bg-cyan-300 selection:text-[#07111f]">
       <div className="pointer-events-none fixed inset-0 opacity-60 [background-image:linear-gradient(rgba(119,195,215,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(119,195,215,0.04)_1px,transparent_1px)] [background-size:48px_48px]" />
+      <div className="pointer-events-none fixed inset-0 opacity-40 [background-image:linear-gradient(115deg,transparent_0%,transparent_47%,rgba(103,232,249,0.08)_48%,transparent_49%,transparent_100%),linear-gradient(25deg,transparent_0%,transparent_62%,rgba(103,232,249,0.06)_63%,transparent_64%)] [background-size:620px_420px,760px_520px]" />
       <div className="pointer-events-none fixed left-1/2 top-[-240px] size-[560px] -translate-x-1/2 rounded-full bg-cyan-400/10 blur-[120px]" />
+      <div className="pointer-events-none fixed right-[-180px] top-[30%] size-[420px] rounded-full bg-blue-500/[0.08] blur-[110px]" />
+      <div className="pointer-events-none fixed bottom-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-cyan-300/30 to-transparent" />
 
       <div className="relative mx-auto max-w-6xl px-5 py-6 sm:px-8 sm:py-10">
         <nav className="mb-12 flex items-center justify-between border-b border-white/10 pb-5 text-xs uppercase tracking-[0.22em] text-slate-400">
@@ -120,6 +123,7 @@ export default function Page() {
           <div className="flex items-center gap-5">
             <a className="transition-colors hover:text-cyan-300" href="#work">Work</a>
             <a className="transition-colors hover:text-cyan-300" href="#skills">Skills</a>
+            <a className="rounded-full border border-cyan-300/30 px-3 py-1.5 text-cyan-200 transition-colors hover:border-cyan-300 hover:bg-cyan-300/10 hover:text-cyan-100" href="/Ashutosh-Kumar-Resume.pdf" download>Download resume</a>
             <a className="transition-colors hover:text-cyan-300" href="mailto:ashufer1211@gmail.com">Contact</a>
           </div>
         </nav>
