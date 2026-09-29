@@ -124,7 +124,7 @@ export default function Page() {
         </nav>
 
         <section className="relative overflow-hidden pb-20">
-          <div className="pointer-events-none absolute inset-y-0 left-[12%] right-[28%] hidden opacity-60 mix-blend-screen lg:block">
+          <div className="pointer-events-none absolute inset-y-0 left-[42%] right-[-2%] hidden opacity-60 mix-blend-screen lg:block">
             <img
               src="/profile-photo.jpeg"
               alt=""
