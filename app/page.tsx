@@ -137,7 +137,7 @@ export default function Page() {
           </div>
 
           <aside className="rounded-[2rem] border border-white/12 bg-white/[0.055] p-6 shadow-2xl shadow-cyan-950/20 backdrop-blur sm:p-8">
-            <div className="mb-8 flex items-start justify-between"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7B14AA7A-2097-4AB9-86E9-0687F0E2EBCD_1_105_c-43ZuKw1NRAqSGY42pj0MRsnR9EDtoa.jpeg" alt="Ashutosh Kumar" className="size-16 rounded-full border-2 border-cyan-300/60 object-cover shadow-lg shadow-cyan-950/40" /><Sparkles className="text-cyan-300" /></div>
+            <div className="mb-8 flex items-start justify-between"><a href="/profile-photo.jpeg" target="_blank" rel="noreferrer" aria-label="Open the full-size profile photo" title="Open full-size photo" className="group block rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-offset-2 focus-visible:ring-offset-[#07111f]"><img src="/profile-photo.jpeg" alt="Ashutosh Kumar" width="128" height="128" decoding="async" fetchPriority="high" className="size-16 rounded-full border-2 border-cyan-300/60 object-cover shadow-lg shadow-cyan-950/40 transition-transform group-hover:scale-105" /></a><Sparkles className="text-cyan-300" /></div>
             <p className="mb-5 text-xs uppercase tracking-[0.22em] text-slate-500">Profile / 2026</p>
             <div className="flex flex-col gap-4 text-sm text-slate-300">
               <a className="flex items-center gap-3 hover:text-cyan-200" href="mailto:ashufer1211@gmail.com"><Mail className="text-cyan-300" /> ashufer1211@gmail.com</a>
