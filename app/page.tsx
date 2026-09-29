@@ -16,6 +16,7 @@ import {
   Sparkles,
   Terminal,
   WandSparkles,
+  X,
 } from 'lucide-react'
 import { useState } from 'react'
 
@@ -100,6 +101,7 @@ const skillGroups = [
 
 export default function Page() {
   const [copied, setCopied] = useState(false)
+  const [photoOpen, setPhotoOpen] = useState(false)
 
   async function copyEmail() {
     await navigator.clipboard.writeText('ashufer1211@gmail.com')
@@ -137,7 +139,7 @@ export default function Page() {
           </div>
 
           <aside className="rounded-[2rem] border border-white/12 bg-white/[0.055] p-6 shadow-2xl shadow-cyan-950/20 backdrop-blur sm:p-8">
-            <div className="mb-8 flex items-start justify-between"><a href="/profile-photo.jpeg" target="_blank" rel="noreferrer" aria-label="Open the full-size profile photo" title="Open full-size photo" className="group block rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-offset-2 focus-visible:ring-offset-[#07111f]"><img src="/profile-photo.jpeg" alt="Ashutosh Kumar" width="128" height="128" decoding="async" fetchPriority="high" className="size-16 rounded-full border-2 border-cyan-300/60 object-cover shadow-lg shadow-cyan-950/40 transition-transform group-hover:scale-105" /></a><Sparkles className="text-cyan-300" /></div>
+            <div className="mb-8 flex items-start justify-between"><button type="button" onClick={() => setPhotoOpen(true)} aria-label="View a larger profile photo" title="View larger photo" className="group block rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-offset-2 focus-visible:ring-offset-[#07111f]"><img src="/profile-photo.jpeg" alt="Ashutosh Kumar" width="128" height="128" decoding="async" fetchPriority="high" className="size-16 rounded-full border-2 border-cyan-300/60 object-cover shadow-lg shadow-cyan-950/40 transition-transform group-hover:scale-105" /></button><Sparkles className="text-cyan-300" /></div>
             <p className="mb-5 text-xs uppercase tracking-[0.22em] text-slate-500">Profile / 2026</p>
             <div className="flex flex-col gap-4 text-sm text-slate-300">
               <a className="flex items-center gap-3 hover:text-cyan-200" href="mailto:ashufer1211@gmail.com"><Mail className="text-cyan-300" /> ashufer1211@gmail.com</a>
@@ -172,6 +174,13 @@ export default function Page() {
 
         <footer className="flex flex-col justify-between gap-5 border-t border-white/10 py-8 text-sm text-slate-500 sm:flex-row sm:items-center"><span>© 2026 Ashutosh Kumar</span><a href="mailto:ashufer1211@gmail.com" className="text-cyan-300 hover:text-cyan-200">Let&apos;s build something useful ↗</a></footer>
       </div>
+
+      {photoOpen && (
+        <div role="dialog" aria-modal="true" aria-label="Larger profile photo" className="fixed inset-0 z-50 flex items-center justify-center bg-[#020711]/90 p-5 backdrop-blur-sm" onClick={() => setPhotoOpen(false)}>
+          <button type="button" onClick={() => setPhotoOpen(false)} aria-label="Close larger profile photo" className="absolute right-5 top-5 rounded-full border border-white/15 bg-white/10 p-2 text-white transition-colors hover:border-cyan-300 hover:text-cyan-200"><X /></button>
+          <img src="/profile-photo.jpeg" alt="Ashutosh Kumar" width="1182" height="665" className="max-h-[85vh] max-w-full rounded-2xl object-contain shadow-2xl shadow-black/50" onClick={(event) => event.stopPropagation()} />
+        </div>
+      )}
     </main>
   )
 }
