@@ -123,7 +123,6 @@ export default function Page() {
           <div className="flex items-center gap-5">
             <a className="transition-colors hover:text-cyan-300" href="#work">Work</a>
             <a className="transition-colors hover:text-cyan-300" href="#skills">Skills</a>
-            <a className="rounded-full border border-cyan-300/30 px-3 py-1.5 text-cyan-200 transition-colors hover:border-cyan-300 hover:bg-cyan-300/10 hover:text-cyan-100" href="/Ashutosh-Kumar-Resume.pdf" download>Download resume</a>
             <a className="transition-colors hover:text-cyan-300" href="mailto:ashufer1211@gmail.com">Contact</a>
           </div>
         </nav>
@@ -137,8 +136,8 @@ export default function Page() {
               <p className="mb-4 font-mono text-sm tracking-[0.16em] text-cyan-300">HELLO, I&apos;M</p>
               <h1 className="max-w-3xl text-5xl font-semibold leading-[0.95] tracking-[-0.07em] text-white sm:text-7xl lg:text-8xl">Ashutosh<br /><span className="text-cyan-300">Kumar.</span></h1>
               <p className="mt-8 max-w-xl text-lg leading-8 text-slate-300">AI Trainer &amp; Engineer in the making — turning data, APIs, and human feedback into useful, measurable systems.</p>
-              <div className="mt-9 flex flex-wrap items-start gap-4">
-                <div className="flex flex-wrap gap-3">
+              <div className="mt-9 flex flex-nowrap items-center gap-3">
+                <div className="flex shrink-0 gap-2">
                   <a href="#work" className="group inline-flex items-center gap-2 rounded-full bg-cyan-300 px-5 py-3 text-sm font-semibold text-[#07111f] transition-transform hover:-translate-y-0.5">Explore projects <ArrowUpRight className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /></a>
                   <a href="https://www.linkedin.com/in/ashutosh-kumar-139b6a258" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition-colors hover:border-cyan-300/60 hover:text-cyan-200"><Network /> LinkedIn</a>
                 </div>
