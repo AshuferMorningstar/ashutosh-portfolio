@@ -125,13 +125,7 @@ export default function Page() {
         </nav>
 
         <section className="relative overflow-visible pb-20">
-          <div className="grid items-center gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
-            <button type="button" aria-label="View larger profile photo" onClick={() => setPhotoOpen(true)} className="group relative mx-auto block w-full max-w-[700px] cursor-zoom-in text-left lg:mx-0 lg:-ml-10 lg:-mt-8">
-              <div className="absolute inset-8 rounded-full bg-cyan-300/10 blur-3xl transition-opacity group-hover:opacity-80" />
-              <img src="/profile-photo.jpeg" alt="Ashutosh Kumar" width="1182" height="665" className="relative w-full object-contain object-center grayscale-[0.08] drop-shadow-[0_24px_45px_rgba(0,0,0,0.35)] transition-transform duration-500 group-hover:scale-[1.02]" />
-              <div className="pointer-events-none absolute inset-y-0 right-0 w-2/5 bg-gradient-to-l from-[#07111f] via-[#07111f]/75 to-transparent" />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-[#07111f] to-transparent" />
-            </button>
+          <div className="grid items-center gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-10">
             <div className="relative z-10 lg:pt-2">
               <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-cyan-300/25 bg-cyan-300/10 px-3 py-1.5 text-xs font-medium tracking-[0.16em] text-cyan-200">
                 <span className="size-1.5 rounded-full bg-cyan-300 shadow-[0_0_12px_#67e8f9]" /> AVAILABLE FOR OPPORTUNITIES
@@ -139,12 +133,12 @@ export default function Page() {
               <p className="mb-4 font-mono text-sm tracking-[0.16em] text-cyan-300">HELLO, I&apos;M</p>
               <h1 className="max-w-3xl text-5xl font-semibold leading-[0.95] tracking-[-0.07em] text-white sm:text-7xl lg:text-8xl">Ashutosh<br /><span className="text-cyan-300">Kumar.</span></h1>
               <p className="mt-8 max-w-xl text-lg leading-8 text-slate-300">AI Trainer &amp; Engineer in the making — turning data, APIs, and human feedback into useful, measurable systems.</p>
-              <div className="mt-9 flex flex-wrap items-center gap-4">
+              <div className="mt-9 flex flex-wrap items-start gap-4">
                 <div className="flex flex-wrap gap-3">
                   <a href="#work" className="group inline-flex items-center gap-2 rounded-full bg-cyan-300 px-5 py-3 text-sm font-semibold text-[#07111f] transition-transform hover:-translate-y-0.5">Explore projects <ArrowUpRight className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /></a>
                   <a href="https://www.linkedin.com/in/ashutosh-kumar-139b6a258" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition-colors hover:border-cyan-300/60 hover:text-cyan-200"><Network /> LinkedIn</a>
                 </div>
-                <div className="flex flex-col items-start gap-2 text-[11px] text-slate-400">
+                <div className="flex flex-col items-start gap-2 pt-1 text-[11px] text-slate-400">
                   <a className="inline-flex items-center gap-1.5 transition-colors hover:text-cyan-200" href="mailto:ashufer1211@gmail.com"><Mail className="size-3.5 text-cyan-300" /> ashufer1211@gmail.com</a>
                   <a className="inline-flex items-center gap-1.5 transition-colors hover:text-cyan-200" href="tel:+918936840174"><Phone className="size-3.5 text-cyan-300" /> +91 8936840174</a>
                   <span className="inline-flex items-center gap-1.5"><MapPin className="size-3.5 text-cyan-300" /> Kolkata, India</span>
@@ -152,6 +146,12 @@ export default function Page() {
                 </div>
               </div>
             </div>
+            <button type="button" aria-label="View larger profile photo" onClick={() => setPhotoOpen(true)} className="group relative mx-auto block w-full max-w-[700px] cursor-zoom-in text-left lg:mx-0 lg:-mr-10 lg:-mt-8">
+              <div className="absolute inset-8 rounded-full bg-cyan-300/10 blur-3xl transition-opacity group-hover:opacity-80" />
+              <img src="/profile-photo.jpeg" alt="Ashutosh Kumar" width="1182" height="665" className="relative w-full object-contain object-center grayscale-[0.08] drop-shadow-[0_24px_45px_rgba(0,0,0,0.35)] transition-transform duration-500 group-hover:scale-[1.02]" />
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-[#07111f] via-[#07111f]/75 to-transparent" />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-[#07111f] to-transparent" />
+            </button>
           </div>
         </section>
 
