@@ -27,12 +27,14 @@ const projects = [
     title: 'SQL Data Job Market Analysis',
     summary: 'Mapped 10,000+ global analyst postings to uncover salary, regional, remote-work, and skill-learning patterns.',
     tags: ['Python', 'SQL', 'PostgreSQL', 'GitHub Copilot'],
+    githubUrl: 'https://github.com/AshuferMorningstar/SQL_PROJECT_DATA_JOB_ANALYSIS',
   },
   {
     number: '02',
     title: 'Revenue Leakage Automation',
     summary: 'Built a Python reporting pipeline that validates transaction logs and flags mismatches beyond a 1% variance ceiling.',
     tags: ['Python', 'Automation', 'Data Quality'],
+    githubUrl: 'https://github.com/AshuferMorningstar/revenue_leakage_qmr',
   },
   {
     number: '03',
@@ -46,12 +48,14 @@ const projects = [
     title: 'AI AutoReply Bot',
     summary: 'Created a contextual WhatsApp Web assistant with chat-history prompting and an automated copy–generate–send loop.',
     tags: ['Python', 'OpenAI API', 'PyAutoGUI'],
+    githubUrl: 'https://github.com/AshuferMorningstar/AI-AutoReply-Bot',
   },
   {
     number: '05',
     title: 'Jarvis Voice Assistant',
     summary: 'Designed a wake-word voice workflow for search, news, music playback, and fallback answers through OpenAI.',
     tags: ['Python', 'gTTS', 'NewsAPI', 'OpenAI API'],
+    githubUrl: 'https://github.com/AshuferMorningstar/Jarvis',
   },
   {
     number: '06',
@@ -78,6 +82,7 @@ const projects = [
     title: 'Pop Balloons Game',
     summary: 'Developed a PyQt6 arcade game with score-based difficulty, bomb balloons, pause and mute controls, sound effects, and looping music.',
     tags: ['Python', 'PyQt6', 'QPainter', 'Audio'],
+    githubUrl: 'https://github.com/AshuferMorningstar/pop-baloons-game',
   },
 ]
 
@@ -151,7 +156,7 @@ export default function Page() {
         <section id="work" className="py-20">
           <div className="mb-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-end"><div><p className="mb-3 font-mono text-sm text-cyan-300">/ SELECTED WORK</p><h2 className="text-4xl font-semibold tracking-[-0.05em] sm:text-5xl">Built with intent.</h2></div><a href={githubRepos} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-cyan-200">Browse GitHub repositories <ExternalLink /></a></div>
           <div className="grid gap-4 md:grid-cols-2">
-            {projects.map((project) => <article key={project.number} className="group flex min-h-[260px] flex-col justify-between rounded-3xl border border-white/10 bg-white/[0.045] p-6 transition-all hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-cyan-300/[0.07] sm:p-7"><div><div className="mb-8 flex items-center justify-between"><span className="font-mono text-sm text-cyan-300">{project.number}</span><div className="flex items-center gap-3"><a aria-label={`View ${project.title} live`} href={project.liveUrl} target="_blank" rel="noreferrer" className="text-slate-500 transition-colors hover:text-cyan-300"><ExternalLink /></a><a aria-label={`View ${project.title} on GitHub`} href={githubRepos} target="_blank" rel="noreferrer" className="text-slate-500 transition-colors hover:text-cyan-300"><GitBranch /></a></div></div><h3 className="text-2xl font-semibold tracking-[-0.03em] text-white">{project.title}</h3><p className="mt-3 max-w-lg text-sm leading-6 text-slate-400">{project.summary}</p></div><div className="mt-8 flex flex-wrap gap-2">{project.tags.map(tag => <span key={tag} className="rounded-full border border-white/10 px-2.5 py-1 text-[11px] text-slate-400">{tag}</span>)}</div></article>)}
+            {projects.map((project) => <article key={project.number} className="group flex min-h-[260px] flex-col justify-between rounded-3xl border border-white/10 bg-white/[0.045] p-6 transition-all hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-cyan-300/[0.07] sm:p-7"><div><div className="mb-8 flex items-center justify-between"><span className="font-mono text-sm text-cyan-300">{project.number}</span><div className="flex items-center gap-3"><a aria-label={`View ${project.title} live`} href={project.liveUrl} target="_blank" rel="noreferrer" className="text-slate-500 transition-colors hover:text-cyan-300"><ExternalLink /></a><a aria-label={`View ${project.title} on GitHub`} href={project.githubUrl ?? githubRepos} target="_blank" rel="noreferrer" className="text-slate-500 transition-colors hover:text-cyan-300"><GitBranch /></a></div></div><h3 className="text-2xl font-semibold tracking-[-0.03em] text-white">{project.title}</h3><p className="mt-3 max-w-lg text-sm leading-6 text-slate-400">{project.summary}</p></div><div className="mt-8 flex flex-wrap gap-2">{project.tags.map(tag => <span key={tag} className="rounded-full border border-white/10 px-2.5 py-1 text-[11px] text-slate-400">{tag}</span>)}</div></article>)}
           </div>
         </section>
 
