@@ -146,11 +146,11 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="mt-12 flex flex-col gap-5 border-t border-white/10 pt-5 text-sm text-slate-400 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end sm:gap-x-6">
-            <a className="inline-flex items-center gap-2 transition-colors hover:text-cyan-200" href="mailto:ashufer1211@gmail.com"><Mail className="text-cyan-300" /> ashufer1211@gmail.com</a>
-            <a className="inline-flex items-center gap-2 transition-colors hover:text-cyan-200" href="tel:+918936840174"><Phone className="text-cyan-300" /> +91 8936840174</a>
-            <span className="inline-flex items-center gap-2"><MapPin className="text-cyan-300" /> Kolkata, West Bengal, India</span>
-            <button aria-label="Copy email address" onClick={copyEmail} className="inline-flex items-center gap-2 text-xs text-slate-500 transition-colors hover:text-cyan-300">{copied ? <Check /> : <Copy />} {copied ? 'Copied' : 'Copy email'}</button>
+          <div className="mt-10 flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] text-slate-400 lg:absolute lg:bottom-1 lg:right-0 lg:mt-0 lg:max-w-none lg:justify-end lg:whitespace-nowrap">
+            <a className="inline-flex items-center gap-1.5 transition-colors hover:text-cyan-200" href="mailto:ashufer1211@gmail.com"><Mail className="size-3.5 text-cyan-300" /> ashufer1211@gmail.com</a>
+            <a className="inline-flex items-center gap-1.5 transition-colors hover:text-cyan-200" href="tel:+918936840174"><Phone className="size-3.5 text-cyan-300" /> +91 8936840174</a>
+            <span className="inline-flex items-center gap-1.5"><MapPin className="size-3.5 text-cyan-300" /> Kolkata, India</span>
+            <button aria-label="Copy email address" onClick={copyEmail} className="inline-flex items-center gap-1.5 text-xs text-slate-500 transition-colors hover:text-cyan-300">{copied ? <Check className="size-3.5" /> : <Copy className="size-3.5" />} {copied ? 'Copied' : 'Copy email'}</button>
           </div>
         </section>
 
