@@ -129,7 +129,7 @@ export default function Page() {
               src="/profile-photo.jpeg"
               alt=""
               aria-hidden="true"
-              className="h-full w-full object-cover object-[center_28%] grayscale-[0.15]"
+              className="h-full w-full object-cover object-[center_18%] grayscale-[0.15]"
               style={{ maskImage: 'linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.08) 18%, rgba(0,0,0,0.72) 48%, #000 78%, transparent 100%), linear-gradient(0deg, transparent 0%, #000 18%, #000 82%, transparent 100%)', maskComposite: 'intersect', WebkitMaskImage: 'linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.08) 18%, rgba(0,0,0,0.72) 48%, #000 78%, transparent 100%), linear-gradient(0deg, transparent 0%, #000 18%, #000 82%, transparent 100%)', WebkitMaskComposite: 'source-in' }}
             />
           </div>
