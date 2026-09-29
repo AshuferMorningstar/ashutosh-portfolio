@@ -13,7 +13,6 @@ import {
   Mail,
   MapPin,
   Phone,
-  Sparkles,
   Terminal,
   WandSparkles,
   X,
@@ -124,7 +123,7 @@ export default function Page() {
           </div>
         </nav>
 
-        <section className="relative grid gap-12 overflow-hidden pb-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+        <section className="relative overflow-hidden pb-20">
           <div className="pointer-events-none absolute inset-y-0 left-[12%] right-[28%] hidden opacity-60 mix-blend-screen lg:block">
             <img
               src="/profile-photo.jpeg"
@@ -147,19 +146,12 @@ export default function Page() {
             </div>
           </div>
 
-          <aside className="rounded-[2rem] border border-white/12 bg-white/[0.055] p-6 shadow-2xl shadow-cyan-950/20 backdrop-blur sm:p-8">
-            <div className="mb-8 flex items-start justify-between"><button type="button" onClick={() => setPhotoOpen(true)} aria-label="View a larger profile photo" title="View larger photo" className="group block rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-offset-2 focus-visible:ring-offset-[#07111f]"><img src="/profile-photo.jpeg" alt="Ashutosh Kumar" width="256" height="256" decoding="async" fetchPriority="high" loading="eager" style={{ imageRendering: 'high-quality' }} className="size-20 rounded-full border-2 border-cyan-300/60 object-cover object-center shadow-lg shadow-cyan-950/40 transition-transform group-hover:scale-105" /></button><Sparkles className="text-cyan-300" /></div>
-            <p className="mb-5 text-xs uppercase tracking-[0.22em] text-slate-500">Profile / 2026</p>
-            <div className="flex flex-col gap-4 text-sm text-slate-300">
-              <a className="flex items-center gap-3 hover:text-cyan-200" href="mailto:ashufer1211@gmail.com"><Mail className="text-cyan-300" /> ashufer1211@gmail.com</a>
-              <a className="flex items-center gap-3 hover:text-cyan-200" href="tel:+918936840174"><Phone className="text-cyan-300" /> +91 8936840174</a>
-              <span className="flex items-center gap-3"><MapPin className="text-cyan-300" /> Kolkata, West Bengal, India</span>
-            </div>
-            <div className="mt-8 flex gap-3 border-t border-white/10 pt-5">
-              <a aria-label="GitHub profile" href="https://github.com/AshuferMorningstar" target="_blank" rel="noreferrer" className="rounded-full border border-white/10 p-2.5 text-slate-300 transition-colors hover:border-cyan-300 hover:text-cyan-300"><GitBranch /></a>
-              <button aria-label="Copy email address" onClick={copyEmail} className="flex items-center gap-2 rounded-full border border-white/10 px-3 py-2 text-xs text-slate-400 transition-colors hover:border-cyan-300 hover:text-cyan-300">{copied ? <Check /> : <Copy />} {copied ? 'Copied' : 'Copy email'}</button>
-            </div>
-          </aside>
+          <div className="mt-12 flex flex-col gap-5 border-t border-white/10 pt-5 text-sm text-slate-400 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end sm:gap-x-6">
+            <a className="inline-flex items-center gap-2 transition-colors hover:text-cyan-200" href="mailto:ashufer1211@gmail.com"><Mail className="text-cyan-300" /> ashufer1211@gmail.com</a>
+            <a className="inline-flex items-center gap-2 transition-colors hover:text-cyan-200" href="tel:+918936840174"><Phone className="text-cyan-300" /> +91 8936840174</a>
+            <span className="inline-flex items-center gap-2"><MapPin className="text-cyan-300" /> Kolkata, West Bengal, India</span>
+            <button aria-label="Copy email address" onClick={copyEmail} className="inline-flex items-center gap-2 text-xs text-slate-500 transition-colors hover:text-cyan-300">{copied ? <Check /> : <Copy />} {copied ? 'Copied' : 'Copy email'}</button>
+          </div>
         </section>
 
         <section className="grid gap-6 border-y border-white/10 py-10 sm:grid-cols-3">
