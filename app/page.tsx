@@ -126,7 +126,7 @@ export default function Page() {
 
         <section className="relative overflow-visible pb-20">
           <div className="grid items-center gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
-            <button type="button" aria-label="View larger profile photo" onClick={() => setPhotoOpen(true)} className="group relative mx-auto block w-full max-w-[520px] cursor-zoom-in text-left lg:mx-0">
+            <button type="button" aria-label="View larger profile photo" onClick={() => setPhotoOpen(true)} className="group relative mx-auto block w-full max-w-[620px] cursor-zoom-in text-left lg:mx-0 lg:-ml-8 lg:-mt-8">
               <div className="absolute inset-8 rounded-full bg-cyan-300/10 blur-3xl transition-opacity group-hover:opacity-80" />
               <img src="/profile-photo.jpeg" alt="Ashutosh Kumar" width="1182" height="665" className="relative w-full object-contain object-center grayscale-[0.08] drop-shadow-[0_24px_45px_rgba(0,0,0,0.35)] transition-transform duration-500 group-hover:scale-[1.02]" />
               <div className="pointer-events-none absolute inset-y-0 right-0 w-2/5 bg-gradient-to-l from-[#07111f] via-[#07111f]/75 to-transparent" />
