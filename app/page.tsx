@@ -110,12 +110,9 @@ export default function Page() {
   }
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#07111f] text-[#eef5fb] selection:bg-cyan-300 selection:text-[#07111f]">
+    <main className="min-h-screen overflow-hidden bg-[#07111f] text-[#eef5fb] selection:bg-cyan-300 selection:text-[#07111f]">
       <div className="pointer-events-none fixed inset-0 opacity-60 [background-image:linear-gradient(rgba(119,195,215,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(119,195,215,0.04)_1px,transparent_1px)] [background-size:48px_48px]" />
-      <div className="pointer-events-none fixed inset-0 opacity-40 [background-image:linear-gradient(115deg,transparent_0%,transparent_47%,rgba(103,232,249,0.08)_48%,transparent_49%,transparent_100%),linear-gradient(25deg,transparent_0%,transparent_62%,rgba(103,232,249,0.06)_63%,transparent_64%)] [background-size:620px_420px,760px_520px]" />
       <div className="pointer-events-none fixed left-1/2 top-[-240px] size-[560px] -translate-x-1/2 rounded-full bg-cyan-400/10 blur-[120px]" />
-      <div className="pointer-events-none fixed right-[-180px] top-[30%] size-[420px] rounded-full bg-blue-500/[0.08] blur-[110px]" />
-      <div className="pointer-events-none fixed bottom-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-cyan-300/30 to-transparent" />
 
       <div className="relative mx-auto max-w-6xl px-5 py-6 sm:px-8 sm:py-10">
         <nav className="mb-12 flex items-center justify-between border-b border-white/10 pb-5 text-xs uppercase tracking-[0.22em] text-slate-400">
@@ -123,6 +120,7 @@ export default function Page() {
           <div className="flex items-center gap-5">
             <a className="transition-colors hover:text-cyan-300" href="#work">Work</a>
             <a className="transition-colors hover:text-cyan-300" href="#skills">Skills</a>
+            <a className="transition-colors hover:text-cyan-300" href="/Ashutosh-Kumar-Resume.pdf" download>Download resume</a>
             <a className="transition-colors hover:text-cyan-300" href="mailto:ashufer1211@gmail.com">Contact</a>
           </div>
         </nav>
@@ -136,8 +134,8 @@ export default function Page() {
               <p className="mb-4 font-mono text-sm tracking-[0.16em] text-cyan-300">HELLO, I&apos;M</p>
               <h1 className="max-w-3xl text-5xl font-semibold leading-[0.95] tracking-[-0.07em] text-white sm:text-7xl lg:text-8xl">Ashutosh<br /><span className="text-cyan-300">Kumar.</span></h1>
               <p className="mt-8 max-w-xl text-lg leading-8 text-slate-300">AI Trainer &amp; Engineer in the making — turning data, APIs, and human feedback into useful, measurable systems.</p>
-              <div className="mt-9 flex flex-nowrap items-center gap-3">
-                <div className="flex shrink-0 gap-2">
+              <div className="mt-9 flex flex-wrap items-start gap-4">
+                <div className="flex flex-wrap gap-3">
                   <a href="#work" className="group inline-flex items-center gap-2 rounded-full bg-cyan-300 px-5 py-3 text-sm font-semibold text-[#07111f] transition-transform hover:-translate-y-0.5">Explore projects <ArrowUpRight className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /></a>
                   <a href="https://www.linkedin.com/in/ashutosh-kumar-139b6a258" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition-colors hover:border-cyan-300/60 hover:text-cyan-200"><Network /> LinkedIn</a>
                 </div>
