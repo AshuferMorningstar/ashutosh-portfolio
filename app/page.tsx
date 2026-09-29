@@ -125,8 +125,8 @@ export default function Page() {
         </nav>
 
         <section className="relative overflow-visible pb-20">
-          <div className="grid items-center gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
-            <button type="button" aria-label="View larger profile photo" onClick={() => setPhotoOpen(true)} className="group relative mx-auto block w-full max-w-[620px] cursor-zoom-in text-left lg:mx-0 lg:-ml-8 lg:-mt-8">
+          <div className="grid items-center gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+            <button type="button" aria-label="View larger profile photo" onClick={() => setPhotoOpen(true)} className="group relative mx-auto block w-full max-w-[700px] cursor-zoom-in text-left lg:mx-0 lg:-ml-10 lg:-mt-8">
               <div className="absolute inset-8 rounded-full bg-cyan-300/10 blur-3xl transition-opacity group-hover:opacity-80" />
               <img src="/profile-photo.jpeg" alt="Ashutosh Kumar" width="1182" height="665" className="relative w-full object-contain object-center grayscale-[0.08] drop-shadow-[0_24px_45px_rgba(0,0,0,0.35)] transition-transform duration-500 group-hover:scale-[1.02]" />
               <div className="pointer-events-none absolute inset-y-0 right-0 w-2/5 bg-gradient-to-l from-[#07111f] via-[#07111f]/75 to-transparent" />
@@ -144,7 +144,7 @@ export default function Page() {
                   <a href="#work" className="group inline-flex items-center gap-2 rounded-full bg-cyan-300 px-5 py-3 text-sm font-semibold text-[#07111f] transition-transform hover:-translate-y-0.5">Explore projects <ArrowUpRight className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /></a>
                   <a href="https://www.linkedin.com/in/ashutosh-kumar-139b6a258" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition-colors hover:border-cyan-300/60 hover:text-cyan-200"><Network /> LinkedIn</a>
                 </div>
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] text-slate-400">
+                <div className="flex flex-col items-start gap-2 text-[11px] text-slate-400">
                   <a className="inline-flex items-center gap-1.5 transition-colors hover:text-cyan-200" href="mailto:ashufer1211@gmail.com"><Mail className="size-3.5 text-cyan-300" /> ashufer1211@gmail.com</a>
                   <a className="inline-flex items-center gap-1.5 transition-colors hover:text-cyan-200" href="tel:+918936840174"><Phone className="size-3.5 text-cyan-300" /> +91 8936840174</a>
                   <span className="inline-flex items-center gap-1.5"><MapPin className="size-3.5 text-cyan-300" /> Kolkata, India</span>
