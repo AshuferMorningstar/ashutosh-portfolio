@@ -120,6 +120,7 @@ export default function Page() {
           <div className="flex items-center gap-5">
             <a className="transition-colors hover:text-cyan-300" href="#work">Work</a>
             <a className="transition-colors hover:text-cyan-300" href="#skills">Skills</a>
+            <a className="transition-colors hover:text-cyan-300" href="/Ashutosh-Kumar-Resume.pdf" download>Download resume</a>
             <a className="transition-colors hover:text-cyan-300" href="mailto:ashufer1211@gmail.com">Contact</a>
           </div>
         </nav>
