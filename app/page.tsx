@@ -120,7 +120,7 @@ export default function Page() {
           <div className="flex items-center gap-5">
             <a className="transition-colors hover:text-cyan-300" href="#work">Work</a>
             <a className="transition-colors hover:text-cyan-300" href="#skills">Skills</a>
-            <a className="transition-colors hover:text-cyan-300" href="/Ashutosh-Kumar-Resume.pdf" download>Download resume</a>
+            <a className="rounded-full border border-cyan-300/30 px-3 py-1.5 text-cyan-200 transition-colors hover:border-cyan-300 hover:bg-cyan-300/10 hover:text-cyan-100" href="/Ashutosh-Kumar-Resume.pdf" download>Download resume</a>
             <a className="transition-colors hover:text-cyan-300" href="mailto:ashufer1211@gmail.com">Contact</a>
           </div>
         </nav>
