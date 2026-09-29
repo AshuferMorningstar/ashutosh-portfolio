@@ -155,7 +155,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section className="grid gap-6 border-y border-white/10 py-10 sm:grid-cols-3">
+        <section className="-mt-10 grid gap-6 border-y border-white/10 py-10 sm:grid-cols-3">
           <div><p className="text-4xl font-semibold text-cyan-300">09</p><p className="mt-2 text-xs uppercase tracking-[0.18em] text-slate-500">Featured builds</p></div>
           <div><p className="text-4xl font-semibold text-cyan-300">10K+</p><p className="mt-2 text-xs uppercase tracking-[0.18em] text-slate-500">Job records analyzed</p></div>
           <div><p className="text-4xl font-semibold text-cyan-300">2026</p><p className="mt-2 text-xs uppercase tracking-[0.18em] text-slate-500">B.Tech graduation</p></div>
