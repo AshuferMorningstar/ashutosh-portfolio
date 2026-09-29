@@ -82,6 +82,7 @@ const skillGroups = [
   { icon: Terminal, label: 'Core', items: ['Python', 'SQL', 'PostgreSQL'] },
   { icon: BrainCircuit, label: 'AI & APIs', items: ['ChatGPT', 'Gemini API', 'OpenAI API', 'ElevenLabs'] },
   { icon: Database, label: 'Tools', items: ['Git', 'GitHub', 'GitHub Copilot', 'Google Sheets'] },
+  { icon: GitBranch, label: 'DevOps', items: ['CI/CD', 'Docker', 'GitHub Actions', 'Deployment workflows'] },
   { icon: WandSparkles, label: 'Workflow', items: ['Prompt design', 'AI-assisted debugging', 'API integration', 'Output evaluation'] },
 ]
 
