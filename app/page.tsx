@@ -124,8 +124,17 @@ export default function Page() {
           </div>
         </nav>
 
-        <section className="grid gap-12 pb-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
-          <div>
+        <section className="relative grid gap-12 overflow-hidden pb-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+          <div className="pointer-events-none absolute inset-y-0 left-[12%] right-[28%] hidden opacity-60 mix-blend-screen lg:block">
+            <img
+              src="/profile-photo.jpeg"
+              alt=""
+              aria-hidden="true"
+              className="h-full w-full object-cover object-[center_28%] grayscale-[0.15]"
+              style={{ maskImage: 'linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.08) 18%, rgba(0,0,0,0.72) 48%, #000 78%, transparent 100%), linear-gradient(0deg, transparent 0%, #000 18%, #000 82%, transparent 100%)', maskComposite: 'intersect', WebkitMaskImage: 'linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.08) 18%, rgba(0,0,0,0.72) 48%, #000 78%, transparent 100%), linear-gradient(0deg, transparent 0%, #000 18%, #000 82%, transparent 100%)', WebkitMaskComposite: 'source-in' }}
+            />
+          </div>
+          <div className="relative z-10">
             <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-cyan-300/25 bg-cyan-300/10 px-3 py-1.5 text-xs font-medium tracking-[0.16em] text-cyan-200">
               <span className="size-1.5 rounded-full bg-cyan-300 shadow-[0_0_12px_#67e8f9]" /> AVAILABLE FOR OPPORTUNITIES
             </div>
