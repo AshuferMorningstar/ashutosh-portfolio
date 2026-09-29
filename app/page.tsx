@@ -124,12 +124,12 @@ export default function Page() {
         </nav>
 
         <section className="relative overflow-visible pb-20">
-          <div className="pointer-events-none absolute -top-12 left-[42%] right-[-2%] hidden opacity-60 mix-blend-screen lg:block">
+          <div className="pointer-events-none absolute -top-12 left-[34%] right-[-2%] hidden opacity-60 mix-blend-screen lg:block">
             <img
               src="/profile-photo.jpeg"
               alt=""
               aria-hidden="true"
-              className="h-auto w-[760px] max-w-none object-contain object-top grayscale-[0.15]"
+              className="h-auto w-[880px] max-w-none object-contain object-top grayscale-[0.15]"
               style={{ maskImage: 'linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.08) 18%, rgba(0,0,0,0.72) 48%, #000 78%, transparent 100%), linear-gradient(0deg, transparent 0%, #000 18%, #000 82%, transparent 100%)', maskComposite: 'intersect', WebkitMaskImage: 'linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.08) 18%, rgba(0,0,0,0.72) 48%, #000 78%, transparent 100%), linear-gradient(0deg, transparent 0%, #000 18%, #000 82%, transparent 100%)', WebkitMaskComposite: 'source-in' }}
             />
           </div>
